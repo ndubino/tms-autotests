@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 import requests
 
-from join_words import join_words
+from homework_lesson_18.join_words import join_words
 
 
 def my_print(text, visible=True):
@@ -12,8 +12,9 @@ def my_print(text, visible=True):
         print(text)
 
 
-def mocked_get(*args,**kwargs):
+def mocked_get(*args, **kwargs):
     return "badger-racoon"
+
 
 class TestJoinWords(unittest.TestCase):
 
